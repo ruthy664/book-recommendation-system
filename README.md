@@ -18,6 +18,12 @@ Since there are a lot of books, the data specifically used for this project is f
 
 Therefore, one of the limitations is that when you are searching for books within a genre such as history, since each book is considered to belong to the Fantasy & Paranormal dataset, the history may just be fantasy history.
 
+### How It Works
+
+Recommendations are given based on popularity, rating, and user preferences. First, each book is given a base score based on its average rating and number of reviews and ratings, and is added to a dataframe with its score. Next, to tailor recommendations to user preferences, any books that don't fit within the required page length or publication year range are removed from the dataframe. Finally, books are given higher scores if they are similar to books the user stated they like (similar book information is provided by the dataset), if they have the same author, or if they fit within the selected genre.
+
+A more detailed overview of the process is included in the notebook.
+
 ### Run Instructions
 
 1. Download the files into a preferred folder.
